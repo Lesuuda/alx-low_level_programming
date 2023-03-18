@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
  * main - entry point
- * Return : 0(success)
+ * Return: 0(success)
  */
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is postive\n", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
