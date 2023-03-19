@@ -10,7 +10,7 @@ char c;
 char d;
 
 c = 'a';
-c = 'A';
+d = 'A';
 while (c <= 'z')
 {
 putchar(c);
