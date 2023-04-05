@@ -23,8 +23,10 @@ int is_prime_number(int n)
 int prime_check(int i, int n)
 {
 	if (i == 1)
-		return (1);
-	if (i % n == 0)
 		return (0);
+	if (i % n == 0 && i > 0)
+
+		return (0);
+	
 	return (prime_check(i + 1, n));
 }
