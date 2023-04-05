@@ -16,10 +16,10 @@ int _sqrt_recursion(int n)
  * @i: iterator
  * Return: squareroot
  */
-int squareroot(int i, int n)
+int squareroot(int n, int i)
 {
 	if (i * i > n)
-		return (1);
+		return (-1);
 	if (i * i == n)
 		return (i);
 	return (squareroot(n, i + 1));
