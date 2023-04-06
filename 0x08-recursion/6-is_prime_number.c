@@ -10,7 +10,7 @@ int is_prime_number(int n)
 {
 	if (n <= 0)
 		return (0);
-	return (prime_check(n, n + 1));
+	return (prime_check(n, 2));
 }
 
 /**
@@ -20,13 +20,12 @@ int is_prime_number(int n)
  * Return: 0 or 1
  */
 
-int prime_check(int i, int n)
+int prime_check(int n, int i)
 {
-	if (i == 1)
-		return (0);
-	if (i % n == 0 && i > 0)
+	if (n == i)
+		return (1);
+	if (i % n == 0)
 
 		return (0);
-	
-	return (prime_check(i + 1, n));
+	return (prime_check(n, i + 1));
 }
