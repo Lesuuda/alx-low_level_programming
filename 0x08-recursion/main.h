@@ -12,5 +12,6 @@ int squareroot(int i, int n);
 int is_prime_number(int n);
 int prime_check(int i, int n);
 int is_palindrome(char *s);
+int check_palindrome(char *s, int left, int right);
 #endif
 
