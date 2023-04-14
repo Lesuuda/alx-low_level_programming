@@ -16,10 +16,10 @@ int main(int argc, char *argv[])
 
 	sum = 0;
 	i = 0;
-	args = atoi(argv[i]);
 
 	for (i = 0; i < argc; i++)
 	{
+		args = atoi(argv[i]);
 		sum = sum + args;
 	}
 	printf("%d\n", sum);
