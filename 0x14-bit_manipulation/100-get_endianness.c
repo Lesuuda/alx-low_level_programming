@@ -1,13 +1,13 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
- *  * _putchar - writes the character c to stdout
- *   * @c: The character to print
- *    *
- *     * Return: On success 1.
- *      * On error, -1 is returned, and errno is set appropriately.
- *       */
-int _putchar(char c)
+ * get_endianness - checks the endianness.
+ * Return: 0 if big endian, 1 if little endian
+ */
+int get_endianness(void)
 {
-	        return (write(1, &c, 1));
+	unsigned int i = 1;
+	char *c = (char *)&i;
+
+	return ((int)*c);
 }
