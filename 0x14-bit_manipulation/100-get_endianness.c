@@ -1,13 +1,13 @@
 #include "main.h"
+#include <unistd.h>
 /**
- * get_endianness - gets endianess
- * Return: pointer to integer
- */
-int get_endianness(void)
+ *  * _putchar - writes the character c to stdout
+ *   * @c: The character to print
+ *    *
+ *     * Return: On success 1.
+ *      * On error, -1 is returned, and errno is set appropriately.
+ *       */
+int _putchar(char c)
 {
-	unsigned int num = 1;
-	char *pointer = (char *) &num;
-
-	return ((int) *pointer);
+	        return (write(1, &c, 1));
 }
-
