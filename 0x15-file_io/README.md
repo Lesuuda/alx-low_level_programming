@@ -1,7 +1,13 @@
 #0x15.C - FILE I/O
+
+
+
+
 File I/O (Input/Output) is a fundamental operation in programming. It allows you to read data from files and write data to files. In C, file I/O is performed using standard functions and library headers.
 
 ##File_Modes
+
+
 The following are some of the most used file operations in C and what they do;
 r": Read mode. Opens an existing file for reading.
 "w": Write mode. Creates a new file for writing or truncates an existing file.
